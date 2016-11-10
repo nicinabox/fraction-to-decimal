@@ -15,6 +15,10 @@ let toFloat = (fraction) => {
 }
 
 module.exports = function fractionToDecimal (mixedNumber) {
+  if (!isNaN(+mixedNumber)) {
+    return +mixedNumber
+  }
+
   if (/\s/.test(mixedNumber)) {
     let [integer, fraction] = mixedNumber.split(' ')
     return +integer + fractionToDecimal(fraction)

@@ -24,4 +24,8 @@ describe('fraction to decimal', () => {
     expect(ftod('1¾'), 'to equal', 1.75)
     expect(ftod('2 ¾'), 'to equal', 2.75)
   })
+
+  it('parses whole numbers', () => {
+    expect(ftod('1'), 'to equal', 1)
+  })
 })
