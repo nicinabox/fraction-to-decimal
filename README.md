@@ -14,3 +14,5 @@ toDecimal('1 1/2')
 
 * Supports proper and improper fractions (1/2, 5/3)
 * Supports mixed numbers (9 3/4)
+* Supports parsing html slash entity
+* Supports parsing html vulgar fractions (¾)
